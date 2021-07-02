@@ -106,8 +106,8 @@ function eraseItemsContainer() {
 
 function fetchSearch() {
   eraseItemsContainer();
-  const searchTerm = inputSearch.value;
   addLoading();
+  const searchTerm = inputSearch.value;
   fetch(`https://api.mercadolibre.com/sites/MLB/search?q=${searchTerm}`)
   .then((response) => response.json())
   .then((jsonData) => {
@@ -133,6 +133,18 @@ document.addEventListener('click', (event) => {
   }
 });
 
+function fetchWithTerm(term) {
+  eraseItemsContainer();
+  addLoading();
+  fetch(`https://api.mercadolibre.com/sites/MLB/search?q=${term}`)
+  .then((response) => response.json())
+  .then((jsonData) => {
+    jsonData.results.forEach((product) => 
+    itemsContainer.appendChild(createProductItemElement(product)));
+    removeLoading();
+  });
+}
+
 window.onload = function onload() {
   cartItemsContainer.innerHTML = localStorage.getItem('actualCart');
   if (localStorage.getItem('actualPrice')) {
@@ -140,4 +152,5 @@ window.onload = function onload() {
   } else {
     cartPriceContainer.innerText = 0;
   }
+  fetchWithTerm('Ryzen 5');
 };
