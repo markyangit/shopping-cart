@@ -1,6 +1,6 @@
-### Boas vindas ao projeto Shopping Cart!
-# Este projeto foi desenvolvido no Curso de Desenvolvimento Web da Trybe, como requisito para aprovação no bloco 9 do módulo de Fundamentos do Desenvolvimento - Javascript Assíncrono e Callbacks.
-# Importante ressaltar que a idealização e a aplicação deste projeto é de todo crédito da Trybe, e aqui estou apresentando apenas para fins de compartilhamento de conhecimento.
+# Boas vindas ao projeto Shopping Cart!
+## Este projeto foi desenvolvido no Curso de Desenvolvimento Web da Trybe, como requisito para aprovação no bloco 9 do módulo de Fundamentos do Desenvolvimento - Javascript Assíncrono e Callbacks.
+## Importante ressaltar que a idealização e a aplicação deste projeto é de todo crédito da Trybe, e aqui estou apresentando apenas para fins de compartilhamento de conhecimento.
 
 #### Entre em contato comigo:
 [LinkedIn](https://www.linkedin.com/in/gabrielmedeiro5/)
