@@ -11,7 +11,7 @@
   padding: 2vh;
   padding-left: 3vh;
   padding-right: 3vh;
-  background-color: rgb(44, 172, 204);
+  background-color: #E6E6E6;
 }
 
 .menu {
@@ -27,7 +27,7 @@
 a:link {
   text-decoration: none;
   font-size: inherit;
-  transition: font-size 1s;
+  transition: font-size 0.3s;
 }
 
 a:hover {
@@ -37,7 +37,6 @@ a:hover {
 .top-bar {
   align-items: center;
   display: flex;
-  height: 100px;
   justify-content: space-around;
   margin-bottom: 10px;
   width: 100%;
@@ -61,15 +60,20 @@ a:hover {
 
 .input-search {
   height: 20px;
-  width: 60%;
+  width: 80%;
   margin-right: 5px;
+}
+
+.container-geral {
+  display: flex;
 }
 
 .container {
   margin-top: 2vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  width: 100%;
+  width: 60%;
 }
 
 .items {
@@ -115,6 +119,8 @@ a:hover {
 
 .cart {
   display: flex;
+  margin-top: 2vh;
+  width: 40%;
   flex-basis: 30%;
   flex-flow: column wrap;
 }
